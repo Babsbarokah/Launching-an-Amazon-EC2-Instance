@@ -59,7 +59,7 @@ To automate server setup, I leveraged **user data scripts** that executed on lau
 - Enabled and started the web server
 - Deployed a basic HTML page confirming the instance was running successfully
 This eliminated manual configuration, streamlining the deployment process.
-Noteworthy that I enabled termination protection here.
+
 
 ![Screenshot 2025-03-15 at 14 47 51](https://github.com/user-attachments/assets/b09a1066-a5ca-4ff2-b0fb-0f2379b96343)
 
@@ -88,10 +88,10 @@ Initially, HTTP requests were blocked due to security group restrictions. To res
 
 ## Step 12: Scaling: Resizing the Instance and Storage
 As workloads change, so should infrastructure. To test scalability, I:
-- Stopped the instance and **upgraded it from t3.micro to t3.small**, doubling the memory
+- Stopped the instance and **upgraded it from t3.micro to c4.4xlarge**, doubling the memory
 - Increased the **EBS volume from 8 GiB to 12 GiB**
-- restartoing the instance
-This demonstrated how AWS enables seamless scaling without major disruptions.
+- restarting the instance
+
 
 ![Screenshot 2025-03-15 at 15 11 48](https://github.com/user-attachments/assets/8c920eac-06c6-4cef-977d-862ab0833bda)
 
